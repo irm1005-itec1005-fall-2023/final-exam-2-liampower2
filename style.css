@@ -5,47 +5,6 @@
  */
 
 
-/*
- * COLOUR PALETTE
- *
- * YOU DO NOT NEED TO USE THESE COLOURS, BUT YOU CAN IF YOU WANT TO
- *
- * #cdb4db - Lavender Purple
- * #ffc8dd - Pink
- * #ffafcc - Light Pink
- * #bde0fe - Light Blue
- * #a2d2ff - Light Blue
- * #0c0a3e - Dark Purple
- * #797979 - Grey
- *
- * https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff
- */
-
-
-/*
- * FOR YOUR DESKTOP VIEWPORT I WOULD RECOMMEND THE FOLLOWING MEDIA QUERY
- *
- * @media screen and (min-width: 800px) {
- *    ... your styles here ...
- * }
- */
-
-/* Reset some default styles */
-/* Reset some default styles */
-/* Reset some default styles */
-/*
- * CSS File for the solution
- * Final Exam
- * You got this!
- */
-
-
-/*
-/*
- * CSS File for the solution
- * Final Exam
- * You got this!
- */
 
 
 /*
@@ -65,6 +24,8 @@
  */
 
 
+
+
 /*
  * FOR YOUR DESKTOP VIEWPORT I WOULD RECOMMEND THE FOLLOWING MEDIA QUERY
  *
@@ -74,84 +35,261 @@
  */
 
 
-/* ... (your existing styles) */
+/* Reset some default styles */
+/* Reset some default styles */
+/* Reset some default styles */
+/*
+ * CSS File for the solution
+ * Final Exam
+ * You got this!
+ */
+ /* Header Section */
+ header {
+    padding: 1rem; /* Adjust padding as needed */
+    text-align: right;
+  }
+  
+  
+  
+  
+  .contact-button {
+    background-color: black; /* Change to black background color */
+    color: white; /* Change text color to white */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  .grid-container-task {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; /* Reduced gap for better visibility */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Updated item styles */
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6 {
+    padding: 0.5rem; /* Reduced padding */
+    border-radius: 0.5rem; /* Reduced border radius */
+    font-size: 1rem; /* Reduced font size */
+  }
+  
+  
+  .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 3;
+    grid-row: span 2; /* Cover top two rows */
+    background-color: #cdb4db;
+  }
+  
+  
+  .item-2 {
+    grid-column: span 2; /* Cover left half */
+    grid-row: span 1;
+    color: #fff;
+    background-color: #ffc8dd;
+  }
+  
+  
+  .item-3 {
+    grid-column: span 2; /* Cover right half */
+    grid-row: span 1;
+    background-color: #ffafcc;
+  }
+  
+  
+  .item-4 {
+    grid-column: span 2; /* Cover bottom center */
+    grid-row: span 1;
+    background-color: #a2d2ff;
+  }
+  
+  
+  .item-5 {
+    grid-column: span 2; /* Cover right half */
+    grid-row: span 1;
+    color: #fff;
+    background-color: #0c0a3e;
+  }
+  
+  
+  .item-6 {
+    grid-column: span 2; /* Cover right half */
+    grid-row: span 1;
+    color: #fff;
+    background-color: #797979;
+  }
+  
+  
+  /* About Me Section */
+  #about-me img {
+    width: 100%;
+    border-radius: 2rem; /* Add border-radius as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  #about-me img {
+    width: 40%; /* Adjust the width as needed */
+    border-radius: 0.5rem; /* Add border-radius as needed */
+  }
+  
+  
+  #about-me p {
+    width: 55%; /* Adjust the width as needed */
+  }
+  
+  .call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7a2fc; /* Adjust the color to match the image */
+    padding: 2rem;
+    margin-top: 6rem;
+    margin-left: 8rem;
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+    border-radius: 20px; /* Rounded corners for the box */
+  }
+  
+  .cta-content {
+    max-width: 1200px; /* Or the maximum width you prefer */
+    text-align: left;
+  }
+  
+  .cta-content h2 {
+    color: #000000; /* Assuming a light text color for contrast */
+    margin-bottom: 1rem;
+  }
+  
+  .cta-content p {
+    color: #000000; /* Assuming a light text color for contrast */
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #000; /* Button background color */
+    color: #fff; /* Button text color */
+    font-weight: bold;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 20px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .cta-button:hover {
+    background-color: #555; /* Darker background on hover */
+  }
+  .my-work {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .my-work h2 {
+    font-size: 2rem;
+    color: #333; /* Changed color to a darker shade */
+    margin-bottom: 15px; /* Reduced margin-bottom */
+  }
+  
+  .work-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Adjusted grid columns */
+    column-gap: 15px; /* Reduced horizontal space */
+    row-gap: 70px; /* Adjusted vertical space between rows */
+    /* Other styles */
+  }
+  
+  .work-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Positioned the title at the top and the content at the bottom */
+    color: #444; /* Changed text color */
+    border: 3px solid #333; /* Adjusted border thickness and color */
+  
+    border-radius: 15px; /* Adjusted border radius */
+    overflow: hidden; /* Ensures content doesn't overflow the border radius */
+    position: relative; /* For positioning the title absolutely within the card */
+    aspect-ratio: 1; /* Keeps the item square */ 
+  }
+  
+  .work-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; /* Changed object-fit property */
+  }
+  
+  .work-item h3 {
+    position: relative; /* Changed position property */
+    top: 10px; /* Adjusted top position */
+    width: 80%; /* Adjusted width */
+    color: #222; /* Changed text color */
+    text-align: center;
+  }
+  
+  .work-item .content {
+    padding: 10px; /* Adjusted padding */
+    margin-top: 5px; /* Adjusted margin-top */
+  }
 
-/* Updated grid styles */
-/* ... (your existing styles) */
-
-/* Updated grid styles */
-/* ... (your existing styles) */
-
-/* Updated grid styles */
-.grid-container-task {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem; /* Reduced gap for better visibility */
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Updated item styles */
-.item-1,
-.item-2,
-.item-3,
-.item-4,
-.item-5, 
-.item-6 {
-  padding: 0.5rem; /* Reduced padding */
-  border-radius: 0.5rem; /* Reduced border radius */
-  font-size: 1rem; /* Reduced font size */
-}
-
-.item-1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 10;
-  grid-row-end: 3;
-  grid-row: span 2; /* Cover top two rows */
-  background-color: #cdb4db;
-}
-
-.item-2 {
-  grid-column: span 2; /* Cover left half */
-  grid-row: span 1;
-  color: #fff;
-  background-color: #ffc8dd;
-}
-
-.item-3 {
-  grid-column: span 2; /* Cover right half */
-  grid-row: span 1;
-  background-color: #ffafcc;
-}
-
-.item-4 {
-  grid-column: span 2; /* Cover bottom center */
-  grid-row: span 1;
-  background-color: #a2d2ff;
-}
-
-.item-5 {
-  grid-column: span 2; /* Cover right half */
-  grid-row: span 1;
-  color: #fff;
-  background-color: #0c0a3e;
-}
-
-.item-6 {
-  grid-column: span 2; /* Cover right half */
-  grid-row: span 1;
-  color: #fff;
-  background-color: #797979;
-} 
 
 
-
-
-/* ... (your existing styles) */
-
-
-
-/* Add more styles as needed */
-
+  
+  
+  
+  /* Footer Section */
+  footer {
+    background-color: purple; /* Add background color */
+    padding: 20px; /* Add padding as needed */
+    border-radius: 1rem; /* Add border-radius for the purple box */
+  }
+  
+  
+  /* Footer Text */
+  footer {
+    background-color: purple; /* Change to purple background color */
+    padding: 1rem; /* Adjust padding as needed */
+    text-align: center;
+  }
+  
+  
+  button {
+    background-color: black; /* Change to black background color */
+    color: white; /* Change text color to white */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  
+  /* ... (your existing styles) */
+  
+  
+  /* ... (your existing styles) */
+  
+  
+  
+  
+  /* ... (your existing styles) */
+  
+  
+  
+  
+  
+  
+  /* Add more styles as needed */
+  
