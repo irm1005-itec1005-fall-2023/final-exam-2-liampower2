@@ -2,153 +2,125 @@
 <html lang="en-ca">
 
 <head>
-  <!-- Set the page title -->
   <title>Final Exam</title>
-
-  <!-- Set the charset we're using to UTF-8 -->
   <meta charset="utf-8" />
-
-  <!-- Set the screens default zoom / scale to 1 -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Specifies the document mode for Internet Explorer -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <!-- Set the CSS Reset File -->
   <link rel="stylesheet" href="./reset.css" />
-
-  <!-- Set some basic CSS for the header and body -->
   <link rel="stylesheet" href="./style.css" />
-
-  <!-- Set the Favicon  -->
   <link rel="icon" href="./images/favicon/window.svg" type="image/svg+xml" />
-
 </head>
 
 <body>
-
-  <!--
-
-    FINAL EXAM CONTENT
-
-    ALL OF THE CONTENT BELOW HAS BEEN PROVIDED FOR YOU SO
-    THAT YOU CAN FOCUS ON THE HTML STRUCTURE AND SEMANTICS.
-
-    ---------------------------------------------
-    
-    # HEADER SECTION
-
-    Site Header (hidden text - not visible on screen)
-    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-light.svg)
-    Contact Us
-
-    # MAIN SECTION
-    ## HERO SECTION
-
-    Amy's Web Development Agency (hidden text - not visible on screen)
-    Web Development Solutions Made Easy
-    Crafting Digital Dreams: Transforming Code into Captivating Experiences - Your Vision, My Expertise.
-
-
-    ## SKILLS SECTION
-
-    My Skills (hidden text - not visible on screen)
-    Web Development
-    UI/UX
-    CSS
-    JavaScript
-    HTML
-    GitHub
-
-    ## ABOUT ME SECTION
-
-    About me (hidden text - not visible on screen)
-    Picture of Amy's in business atire with a pink background (<- image alt text <- ./images/about/about.jpg)
-
-    Hey, I'm Amy. Are you ready to level up your web project?
-
-    I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
-
-    Contact me
-
-    ## MY WORK SECTION
-
-    My Work
-
-    Screenshot of Tutorial Exercise 03 (<- image alt text <- ./images/work/work-1.png)
-    Tutorial Exercise 03
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 05 (<- image alt text <- ./images/work/work-2.png)
-    Tutorial Exercise 05
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 07 (<- image alt text <- ./images/work/work-3.png)
-    Tutorial Exercise 07
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 09 (<- image alt text <- ./images/work/work-4.png)
-    Tutorial Exercise 09
-    HTML
-    CSS
-    JavaScript
-
-    Book a call with me
-
-    ## CONTACT ME SECTION
-
-    Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!"
-
-    Contact Me
-
-    ## FOOTER SECTION
-
-    Site Footer (hidden text - not visible on screen)
-
-    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-dark.svg)
-    © 2023 Amy's Web Development Agency
-
-  -->
-
+  <header>
+    <button class="contact-button">Contact Us</button>
+  </header>
   <main>
     <div class="page-container">
-      <h1>Web Develpoment Made easy</h1>
-        <h2>Web deveolopmenty made easy</h2>
+      <h1 class="smaller">Web Development Solutions Made Easy</h1>
+      <p>Crafting Digital Dreams:tranfoming code into Captivating Experience - Your values enterprise</p>
     </div>
   </main>
-    <!-- Hidden heading for screen readers -->
-    <h1 class="sr-only">Exam</h1>
+  <!-- Hidden heading for screen readers -->
+  <h1 class="sr-only">Exam</h1>
 
-    <!-- Section for task 1-->
-    <h1>Celebrity Gossip Blog!</h1>
+  <!-- Section for task 1-->
 
-    <div class="wrapper">
-      <ul class="grid-container-task">
-        <li class="item-1">
-          Web Development
-        </li>
-        <li class="item-2">
-          UI/UX
-        </li>
-        <li class="item-3">
-          CSS
-        </li>
-        <li class="item-4">
-          html
-        </li>
-        <li class="item-5">
-          JavaScript
-        <li class="item-6">
+  <div class="wrapper">
+    <ul class="grid-container-task">
+      <li class="item-1">
+        Web Development
+      </li>
+      <li class="item-2">
+        UI/UX
+      </li>
+      <li class="item-3">
+        CSS
+      </li>
+      <li class="item-4">
+        HTML
+      </li>
+      <li class="item-5">
+        JavaScript
+      </li>
+      <li class="item-6">
         GitHub
-        </li>
-        </li>
-        </li>
-      </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- Additional content based on the provided structure -->
+  <section id="hero-section">
+    <div class="page-container">
     </div>
+  </section>
 
+  <!-- About Me Section -->
+  <section id="about-me">
+    <div class="page-container">
+      <h2 class="sr-only">About Me</h2>
+      <img src="./images/about/about.jpg" alt="Amy's picture in business attire with a pink background" class="smaller" />
+      <p class="smaller">Hey, I'm Amy. Are you ready to level up your web project?</p>
+      <p class="smaller">I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+      <p class="smaller">Contact me</p>
+    </div>
+  </section>
+
+  <!-- My Work Section -->
+  <section id="my-work">
+    <div class="page-container">
+      <h2 class="sr-only">My Work</h2>
+
+      <div class="work-item">
+        <img src="./images/work/work-1.png" alt="Screenshot of Tutorial Exercise 03" class="smaller" />
+        <h3 class="smaller">Tutorial Exercise 03</h3>
+        <p class="smaller">HTML, CSS</p>
+      </div>
+
+      <div class="work-item">
+        <img src="./images/work/work-2.png" alt="Screenshot of Tutorial Exercise 05" class="smaller" />
+        <h3 class="smaller">Tutorial Exercise 05</h3>
+        <p class="smaller">HTML, CSS</p>
+      </div>
+
+      <div class="work-item">
+        <img src="./images/work/work-3.png" alt="Screenshot of Tutorial Exercise 07" class="smaller" />
+        <h3 class="smaller">Tutorial Exercise 07</h3>
+        <p class="smaller">HTML, CSS</p>
+      </div>
+
+      <div class="work-item">
+        <img src="./images/work/work-4.png" alt="Screenshot of Tutorial Exercise 09" class="smaller" />
+        <h3 class="smaller">Tutorial Exercise 09</h3>
+        <p class="smaller">HTML, CSS, JavaScript</p>
+      </div>
+
+      <p class="smaller">Book a call with me</p>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact-me">
+    <div class="page-container">
+      <h2 class="sr-only">Contact Me</h2>
+      <p class="smaller">Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!</p>
+      <p class="smaller">Contact Me</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="page-container">
+      <h1 class="sr-only">Amy's Web Development Agency</h1>
+      <p class="smaller">&copy; 2023 Amy's Web Development Agency</p>
+    </div>
+  </footer>
 
 </body>
+
 </html>
+
+
+
+
+
+
